@@ -6,7 +6,7 @@
 
 <ul>
 	{% for whishe in whishes %}
-		<li>{{ whishe.title }}  by: {{whishe.author}}</li>
+		<li><strong>{{whishe.id}}: {{ whishe.title }}</strong><small> by: {{whishe.author}} | {{whishe.dateCreated|date('Y/m/d H:i:s') }}</small></li>
 	{% endfor %}
 </ul>
 {% endblock %}
